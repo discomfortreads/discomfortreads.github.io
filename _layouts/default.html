@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>
+arnaveha			</title>
+			<!-- link to main stylesheet -->
+			<link rel="stylesheet" type="text/css" href="/css/style.css">
+		</head>
+		<body>
+			<a class="site-title" rel="author" href="{{ "/" | relative_url }}">
+				{%- if site.title-logo -%}
+				<img src="{{ site.title-logo | relative_url }}" alt="{{ site.title | escape }}" width="50px" height="50px"></img>
+					{%- else -%}
+					{{ site.title | escape }}
+					{%- endif -%}
+					</a>
+			<nav>
+	    		<ul>
+	        		<li><a href="/">Home</a></li>
+		        	<li><a href="/about">About</a></li>
+	        		<li><a href="/blog">Blog</a></li>
+					<li><a href="/resources">Resources & Links</a></li>
+	    		</ul>
+			</nav>
+			<div class="container">
+			
+			{{ content }}
+			
+			</div><!-- /.container -->
+			<footer>
+	    		<ul>
+	        		<li><a href="#">contact</a></li>
+	        		<li><a href="#">socials</a></li>
+				</ul>
+			</footer>
+		</body>
+	</html>
