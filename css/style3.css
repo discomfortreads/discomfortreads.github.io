@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Betania+Patmos+GDL&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #1d1e23, #3e3f4c);
+  height: 100vh;
+  font-family: 'Betania Patmos GDL', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-card {
+  background: #f482c1;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px 40px;
+  text-align: center;
+  width: 25%;
+  color: #000;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  transition: 0.3s ease-in-out;
+}
+
+.profile-card:hover {
+  transform: translateY(-10px);
+}
+
+.profile-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #000;
+  margin-bottom: 15px;
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons a {
+  color: #000;
+  margin: 0 10px;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color:  	#e5bbef;
+}
+
+.betania-patmos-gdl-regular {
+  font-family: "Betania Patmos GDL", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
